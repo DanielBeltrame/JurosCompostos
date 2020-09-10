@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calcular.js"></script>
+    
+    <title></title>
+</head>
+<body>  
+    <div id="X">
+        <div id="Entradas">
+            <label for="Valor">Valor: <input id="Valor" onkeyup="somenteNumeros(this);" maxlength="5" type="text" /> <br>
+            <label for="Juros">Porcentagem dos Juros: <input id="Juros" onkeyup="somenteNumeros(this);" type="text" /> </label> <br>
+            <label for="Meses">Quantidade de Meses: <input id="Meses" onkeyup="somenteNumeros(this);"  type="text" /> </label> <br>
+        </div>
+
+        <div id="Btn">
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button type="button" onclick="limpar()">Limpar</button> <br>
+        </div>
+
+        <label for="Rentabilidade">Rentabilidade:<input type="number" readonly id="resultado"></label>
+    </div>
+</body>
+</html>
